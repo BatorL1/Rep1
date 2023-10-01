@@ -33,4 +33,12 @@ switch (num == 12 ) {
 
 var car = { make: "Ford", model: "Focus", year: 2017 };
 
+//two ways to write the same thing
+
+var person = new Object();
+person.firstName = "John";
+person.age = 50;
+
+
+
 //this is an object
