@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>
+      test
+    </title>
+    <script>
+      if (localStorage) { // Check if the localStorage object exists
+        function savewb() { // Store data
+        var txt = document.getElementById('sName').value;
+        localStorage.setItem("name", txt);
+        alert("Your name is saved.");
+      }
+
+      function accesswb() { // Retrieve data
+      alert("Hi, " + localStorage.getItem("name"));
+      }  
+    } else {
+      alert("Sorry, your browser do not support local storage.");
+    } 
+
+
+      
+    </script>
+
+
+    
+  </head>
+  <body>
+    <form>
+      <label>Name: <input type="text" id="sName"></label>
+      <button type="button" onclick="savewb()">Save Name</button>
+      <button type="button" onclick="accesswb()">Get Name</button>
+    </form>
+
+    
+  </body>
+
+  
+</html>
