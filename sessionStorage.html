@@ -1,1 +1,44 @@
+<html>
+	<head>
+		<title>
+			test
+		</title>
+		<script>
+      function savewb() {
+    var key = document.getElementById("sKey").value;
+    if ( key != "" )
+        sessionStorage[key] = document.getElementById("sValue").value;
+}
+function accesswb() {
+    var s = "";
+    for (var i=0; i<sessionStorage.length; i++) {
+        var key = sessionStorage.key(i);
+        s += key + " = " + sessionStorage.getItem(key) + "\n";
+    }
+    alert( s );
+}
+function clearwb() {
+    sessionStorage.clear();
+}
+
+
+		</script>
+
+
+
+	</head>
+	<body>
+	<form>
+    <label>String Key:   <input type="text" id="sKey"></label>
+    <label>String Value: <input type="text" id="sValue"></label>
+    <button type="button" onclick="savewb()"  >Save  </button>
+    <button type="button" onclick="accesswb()">Get   </button>
+    <button type="button" onclick="clearwb()" >Clear </button>
+  </form>
+
+
+	</body>
+
+
+</html>
 
