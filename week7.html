@@ -5,6 +5,9 @@
     </title>
     <script>
       if (localStorage) { // Check if the localStorage object exists
+        //some browsers might not support local storage this is why if statement is needed
+
+        
         function savewb() { // Store data
         var txt = document.getElementById('sName').value;
         localStorage.setItem("name", txt);
@@ -12,9 +15,13 @@
       }
 
       function accesswb() { // Retrieve data
+        
       alert("Hi, " + localStorage.getItem("name"));
       }  
+        
     } else {
+
+        
       alert("Sorry, your browser do not support local storage.");
     } 
 
