@@ -1,0 +1,25 @@
+{
+  "name": "Sam",
+  "age": 18,
+  "isMarried": false,
+  "hobbies": ["reading", "traveling"],
+}
+
+
+[
+  {"name": "Bob", "age": 28},
+  {"name": "Eve", "age": 22},
+  {"name": "Charlie", "age": 35}
+]
+
+
+{
+  "person": {
+    "name": "Alice",
+    "age": 25,
+    "address": {
+      "city": "London",
+      "area": "Westminster"
+    }
+  }
+}
